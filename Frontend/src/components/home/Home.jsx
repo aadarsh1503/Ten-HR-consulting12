@@ -418,7 +418,7 @@ function Home() {
         </div>
 
         <img
-          src='/src/assets/images/one-stop-hr-services-for-your-business.jpeg'
+          src='https://recruitindo.com/wp-content/uploads/2023/12/one-stop-hr-services-for-your-business.png'
           alt='HR Service'
           className='one-stop-image'
         />
