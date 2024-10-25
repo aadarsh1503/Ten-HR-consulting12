@@ -92,7 +92,10 @@ function Home() {
           <div className='content'>
             <div className='text-section'>
               <div className='avatar-section'>
-                <img src='/src/assets/images/icon-avatar.png' alt='Avatars' />
+                <img
+                  src='https://recruitindo.com/wp-content/uploads/2023/12/icon-ava.png'
+                  alt='Avatars'
+                />
                 <p>{t("Join over 250+ businesses that have grown with us")}</p>
               </div>
               <h1>{t("One platform for hiring Interns")}</h1>
