@@ -28,58 +28,36 @@ import ContactForm from "./components/Contact/ContactForm";
 
 function App() {
   return (
-    <>
-     <BrowserRouter>
+    <BrowserRouter>
       <I18nextProvider i18n={i18n}>
-       
-          <Navbar />
-          </I18nextProvider>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/aboutUs" element={<AboutUs />} />
-            <Route path="/jobVacancies" element={<JobVacancies />} />
-            <Route path="/contactUs" element={<ContactUs />} />
-            <Route path="/resources" element={<Resources />} />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/jobVacancies" element={<JobVacancies />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/resources" element={<Resources />} />
 
-            <Route path="/services/peo&eor" element={<PeoEor />} />
-            <Route path="/services/recruitment" element={<Recruitment />} />
-            <Route path="/services/hrConsulting" element={<HrConsulting />} />
-            <Route
-              path="/services/payrollProcessing"
-              element={<PayrollProcessing />}
-            />
-            <Route
-              path="/services/managedServices"
-              element={<ManagedServices />}
-            />
+          <Route path="/services/peo&eor" element={<PeoEor />} />
+          <Route path="/services/recruitment" element={<Recruitment />} />
+          <Route path="/services/hrConsulting" element={<HrConsulting />} />
+          <Route path="/services/payrollProcessing" element={<PayrollProcessing />} />
+          <Route path="/services/managedServices" element={<ManagedServices />} />
 
-            <Route path="/pricing/peo&eor" element={<PricingPeoEor />} />
-            <Route
-              path="/pricing/recruitment"
-              element={<PricingRecruitment />}
-            />
-            <Route path="/applyTalent" element={<ApplyTalent />} />
-            <Route
-              path="/pricing/hrConsulting"
-              element={<PricingHrConsulting />}
-            />
-            <Route
-              path="/pricing/payrollProcessing"
-              element={<PricingPayrollProcessing />}
-            />
-            <Route
-              path="/pricing/managedServices"
-              element={<PricingManagedServices />}
-            />
-            <Route path="/calculator" element={<Calculator />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/applyy" element={<Apply />} />
-          </Routes>
-        </BrowserRouter>
-      
-      <ContactForm />
-      <Footer />
-    </>
+          <Route path="/pricing/peo&eor" element={<PricingPeoEor />} />
+          <Route path="/pricing/recruitment" element={<PricingRecruitment />} />
+          <Route path="/applyTalent" element={<ApplyTalent />} />
+          <Route path="/pricing/hrConsulting" element={<PricingHrConsulting />} />
+          <Route path="/pricing/payrollProcessing" element={<PricingPayrollProcessing />} />
+          <Route path="/pricing/managedServices" element={<PricingManagedServices />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/applyy" element={<Apply />} />
+        </Routes>
+        <ContactForm />
+        <Footer />
+      </I18nextProvider>
+    </BrowserRouter>
   );
 }
 
