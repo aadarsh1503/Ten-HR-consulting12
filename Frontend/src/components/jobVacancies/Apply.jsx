@@ -39,7 +39,7 @@ const Apply = () => {
 
     try {
       const response = await fetch(
-        "https://try-website-1.onrender.com/upload",
+        "https://ten-hr-consulting-14.onrender.com/upload",
         {
           method: "POST",
           body: formData,
