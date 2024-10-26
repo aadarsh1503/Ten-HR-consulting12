@@ -29,9 +29,11 @@ import ContactForm from "./components/Contact/ContactForm";
 function App() {
   return (
     <>
+     <BrowserRouter>
       <I18nextProvider i18n={i18n}>
-        <BrowserRouter>
+       
           <Navbar />
+          </I18nextProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutUs" element={<AboutUs />} />
@@ -74,7 +76,7 @@ function App() {
             <Route path="/applyy" element={<Apply />} />
           </Routes>
         </BrowserRouter>
-      </I18nextProvider>
+      
       <ContactForm />
       <Footer />
     </>
